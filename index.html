@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Servicios Contables</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js"></script>
+</head>
+<body>
+<div>
+    <header>
+      <nav class="nav">
+        <div class="nav__barnd">
+          <h1>LOGO</h1>
+        </div>
+        <div class="nav__list">
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Acerca de Nosotros</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><button href="#">Contactanos</button></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+</div>
+<br><br><br>
+  <div class="wrapper">
+    <div class="container">
+        <div class="caja1">
+            <div class="content">
+                <h1>Servicios Contables, <br>Tributarios y Laborales.</h1>
+                <p>Dinos en que podemos ayudarte:</p>
+                <button>Te  ayudamos</button>
+            </div>
+            <div class="image">
+                <img src="image2.jpg" width="97%" height="392">
+            </div>
+            <div class="imagen"></div>
+        </div>
+      </div>
+  </div>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+        <script>
+            var tl = gsap.timeline();
+            tl.to(".imagen", {
+                x: 0,
+                opacity: 1,
+                duration: 1
+            }, 0.7).to(".image", {
+                y: 0,
+                opacity: 1,
+                duration: 1
+            }, 0.5).to(".content", {
+                x: 0,
+                opacity: 1,
+                duration: 1
+            }, 0.7)
+
+            function gone() {
+                var tl = gsap.timeline();
+                tl.to(".imagen", {
+                    x: 600,
+                    opacity: 0,
+                    duration: 1
+                }, 0.3).to(".image", {
+                    y: 20,
+                    opacity: 0,
+                    duration: 1
+                }, 0).to(".content", {
+                    x: -50,
+                    opacity: 0,
+                    duration: 1
+                }, 0.3)
+                setTimeout(() => {
+                    window.location.href = 'about.html'
+                }, 1000)
+            }
+        </script>
+
+
+
+
+</body>
+
+</html>

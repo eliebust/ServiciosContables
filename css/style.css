@@ -1,0 +1,178 @@
+body{
+	background: #86FCF5;
+	width:auto;
+}
+/* Menu */
+.nav {
+	background: white;
+	z-index: 25;
+	width: 90%;
+	padding: 0px 100px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	position: fixed;
+	top: 25px;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 80px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 10px;
+}
+
+.nav__list ul {
+	display: flex;
+	align-items: center;
+	list-style: none;
+	padding: 0;
+}
+
+.nav__list ul li{
+	margin-left: 50px;
+}
+
+.nav__list ul li a{
+	font-size: 16px;
+	text-decoration: none;
+	color: #56070c;
+	font-weight: bold;
+	display: block;
+}
+
+.nav__list ul li button{
+	background: #56070c;
+	border: none;
+	padding: 10px 20px;
+	font-family: 'Inter';
+	font-weight: bold;
+	color: #fff;
+	border-radius: 9px;
+	cursor: pointer;
+	-webkit-transition: .4s ease;
+	transition: .4s ease;
+}
+
+.nav__list ul li button:hover {
+	transform: translateY(-5px);
+}
+
+.nav__barnd {
+	font-family: 'Poppins';
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: 700;
+	background: #56070c;
+	-webkit-background-clip: text;
+	color: transparent;
+	font-weight: 700;
+}
+
+/*cuerpo*/
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.caja1 {
+  margin-top: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[];
+  grid-template-columns: repeat(2, 1fr);
+  height: 70vh;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.caja1 .imagen {
+	position: absolute;
+	background: #56070c;
+	width: 509px;
+	height: 354px;
+	right: 27px;
+	top: 129px;
+	-webkit-transform: translateX(600px);
+	transform: translateX(600px);
+	opacity: 0;
+	z-index: -1;
+}
+
+.image {
+  margin-top: 30px;
+  width: 100%;
+  height: 490px;
+  overflow: hidden;
+  text-align: right;
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+}
+
+.image img {
+  width: 100%;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  max-width: 500px;
+}
+
+.content {
+  margin-left: 10px;
+  opacity: 0;
+  -webkit-transform: translateX(-40px);
+          transform: translateX(-40px);
+}
+
+.content h1 {
+  font-size: 80px;
+  margin: 0;
+	color: #56070c;
+}
+
+.content p {
+  margin: 15px 0px;
+  color: #707070;
+	font-size: 30px;
+}
+
+.content button {
+  background: #56070c;
+  color: #fff;
+  padding: 10px 20px;
+
+  font-family: 'Poppins';
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+}
+
+.content button:hover {
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+  cursor: pointer;
+}
+
+.content button:active {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+
+/* Diseño tableta. */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+
+}
+
+/* Diseño telefono. */
+@media (min-width: 221px) and (max-width: 767px) {
+
+
+
+}
