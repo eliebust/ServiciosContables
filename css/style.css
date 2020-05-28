@@ -1,5 +1,5 @@
 body{
-	background: #86FCF5;
+	background: #EAEDED;
 	width:auto;
 }
 /* Menu */
@@ -18,7 +18,7 @@ body{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	box-shadow: 10px;
+	box-shadow: -5px 7px 5px 0px rgba(0,0,0,0.28);
 }
 
 .nav__list ul {
@@ -99,6 +99,7 @@ body{
 	transform: translateX(600px);
 	opacity: 0;
 	z-index: -1;
+	box-shadow: -5px 7px 5px 0px rgba(0,0,0,0.28);
 }
 
 .image {
@@ -117,6 +118,7 @@ body{
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
   max-width: 500px;
+	box-shadow: -5px 7px 5px 0px rgba(0,0,0,0.28);
 }
 
 .content {
